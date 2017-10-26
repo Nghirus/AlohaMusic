@@ -37,7 +37,11 @@ public class MusicActivity extends AppCompatActivity {
         hulaVideoView.setVideoURI(Uri.parse(uri));
         hulaVideoView.setMediaController(new MediaController(this));
     }
-
+/**
+* This method allows for media to be played depending on which 
+* button has been pressed. 
+*@param v is the view the media player will be access through
+*/
     public void playMedia(View v) {
         //Make a decision based on id of the view.
         switch (v.getId()) {
